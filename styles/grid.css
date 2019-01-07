@@ -37,7 +37,6 @@ header, footer{
 
 @media all and (min-width: 1024px){
 
-
   header, footer{
     height: 150px; 
   }
@@ -62,5 +61,6 @@ header, footer{
 
   .right{
     grid-column: 3/4;
+
   }
 }
