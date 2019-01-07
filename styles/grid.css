@@ -42,43 +42,37 @@ footer{
 @media all and (min-width: 1024px){
 
 body{
-  display: grid;    
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 100px);
+  /* display: grid;     */
+  /* grid-template-columns: repeat(12, 1fr); */
+  /* grid-template-rows: repeat(8, 100px); */
 }
 
 header{
-  grid-row-start: 1;
-  grid-row-end: three;
-  grid-column-start: 1;
-  grid-column-end: twelve;
+height: 150px;
+
 }
 
+main{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  height: 700px;
+}
 .left{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: 1;
-  grid-row-end: three;
+ grid-column: 1/2;
+ height: 700px;
 }
 
 .content{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: three;
-  grid-row-end: ten;
+  grid-column: 2/3;
+  height: 700px;
 }
 
 .right{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: ten;
-  grid-row-end: twelve;
+  grid-column: 3/4;
+  height: 700px;
 }
 
 footer{
-  grid-row-start: seven;
-  grid-row-end: eight;
-  grid-column-start: 1;
-  grid-column-end: twelve;
+  height: 150px;
   }
 }
