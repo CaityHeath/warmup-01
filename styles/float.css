@@ -1,73 +1,56 @@
-body{
-  color: white;
-  text-align: center;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
 p{
   padding-top: 10px;
 }
 
-header{
-  background-color: #6C67C5;
+header, footer{
+  background-color: #FF6927;
   height: 100px;
-  width: 100%
+  width: 100%;
 }
 
 .left{
-  background-color: #66C3B1;
+  background-color: #FFD8C7;
   height: 250px;
   width: 100%;
 }
 
 .content{
-  background-color: #DF8F8F;
+  background-color: #FFD117;
   height: 250px;
   width: 100%;
 }
 
 .right{
-  background-color: #92C366;
+  background-color: #5CD2D9;
   height: 250px;
   width: 100%;
 }
 
-footer{
-  background-color: #B166C3;
-  height: 100px;
-  width: 100%;
-}
 
 @media all and (min-width: 1024px){
-body{
-width: 100%;
-height: 100%;
-}
 
-header{
-  height: 180px;
+  body{
   width: 100%;
+  height: 100%;
 }
 
-.left{
-  height: 700px;
-  width: 15%;
-  float: left; 
-}
-
-.content{
-  height: 700px;
-  width: 70%;
-  float: left;
-}
-
-.right{
-  height: 700px;
-}
-
-footer{
-  height: 180px;
-  width: 100%;
+  header, footer{
+    height: 180px; 
+    width: 100%;
   }
+
+.left, .content, .right {
+  height: 700px;
+}
+
+  .left{
+    width: 15%;
+    float: left;
+  }
+
+  .content{
+    width: 70%;
+    float: left;
+  }
+
 }
