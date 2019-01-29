@@ -9,34 +9,33 @@ p{
   padding-top: 10px;
 }
 
-header{
-  background-color: #6C67C5;
+header, footer{
   height: 100px;
   width: 100%
 }
 
-.left{
-  background-color: #66C3B1;
+header{
+  background-color: #553c60;
+}
+
+.left, .right, .content{
   height: 250px;
   width: 100%;
+}
+.left{
+  background-color: #ffb0a0;
 }
 
 .content{
-  background-color: #DF8F8F;
-  height: 250px;
-  width: 100%;
+  background-color: #f5e9de;
 }
 
 .right{
-  background-color: #92C366;
-  height: 250px;
-  width: 100%;
+  background-color: #ff6749;
 }
 
 footer{
-  background-color: #B166C3;
-  height: 100px;
-  width: 100%;
+  background-color: #553c60;
 }
 
 @media all and (min-width: 1024px){
@@ -45,15 +44,18 @@ width: 100%;
 height: 100%;
 }
 
-header{
+header, footer{
   height: 180px;
   width: 100%;
 }
 
-.left{
+.left, .right{
   height: 700px;
   width: 15%;
-  float: left; 
+}
+
+.left{
+  float:left;
 }
 
 .content{
@@ -63,11 +65,12 @@ header{
 }
 
 .right{
-  height: 700px;
+  float: right;
 }
 
 footer{
-  height: 180px;
-  width: 100%;
-  }
+  clear:both;
+}
+
+
 }

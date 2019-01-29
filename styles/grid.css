@@ -9,76 +9,44 @@ p{
   padding-top: 10px;
 }
 
-header{
-  background-color: #6C67C5;
+header, footer{
   height: 100px;
-  width: 100%
+  width: 100%;
+  background-color: #553c60;
+}
+
+.left, .content, .right{
+  height: 250px;
+  width: 100%;
 }
 
 .left{
-  background-color: #66C3B1;
-  height: 250px;
-  width: 100%;
+  background-color: #ffb0a0;
 }
 
 .content{
-  background-color: #DF8F8F;
-  height: 250px;
-  width: 100%;
+  background-color: #f5e9de;
 }
 
 .right{
-  background-color: #92C366;
-  height: 250px;
-  width: 100%;
+  background-color: #ff6749;
 }
 
-footer{
-  background-color: #B166C3;
-  height: 100px;
-  width: 100%;
-}
 
 @media all and (min-width: 1024px){
 
-body{
-  display: grid;    
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 100px);
-}
-
-header{
-  grid-row-start: 1;
-  grid-row-end: three;
-  grid-column-start: 1;
-  grid-column-end: twelve;
-}
-
-.left{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: 1;
-  grid-row-end: three;
-}
-
-.content{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: three;
-  grid-row-end: ten;
-}
-
-.right{
-  grid-row-start: three;
-  grid-row-end: six;
-  grid-column-start: ten;
-  grid-row-end: twelve;
-}
-
-footer{
-  grid-row-start: seven;
-  grid-row-end: eight;
-  grid-column-start: 1;
-  grid-column-end: twelve;
+  header, footer{
+    height: 150px;
   }
+
+  main{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    height: 700px;
+  }
+
+  .left, .content, .right{
+    height: 700px;
+  }
+
 }
