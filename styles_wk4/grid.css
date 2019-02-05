@@ -9,30 +9,36 @@ p{
   padding-top:40px;
 }
 
-header{
-  background-color: #ff614c;
+header, footer{
   height: 100px;
 }
 
-.left{
-  background-color: #475161;
-  height: 245px;
-}
-
-.content{
-  background-color: #bfdc36;
-  height: 245px;
-}
-
-.right{
-  background-color: #ebe8d8;
-  height: 245px;
+header{
+  background-color: #ff614c;
 }
 
 footer{
   background-color: #ff614c;
-  height:100px;
 }
+
+.left, .content, .right{
+  height: 245px;
+}
+
+.left{
+  background-color: #475161;
+}
+
+.content{
+  background-color: #bfdc36;
+
+}
+
+.right{
+  background-color: #ebe8d8;
+
+}
+
 
 @media all and (min-width: 1024px){
 

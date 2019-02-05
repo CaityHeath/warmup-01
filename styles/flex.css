@@ -1,70 +1,70 @@
-html{
+body{
   color: white;
   text-align: center;
+  font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
 }
-
 
 p{
   padding-top: 10px;
 }
 
 header, footer{
-  background-color: #FF6927;
   height: 100px;
+  width: 100%
+}
+
+header{
+  background-color: #553c60;
+
+}
+
+.left, .content, .right{
+  height: 250px;
   width: 100%;
 }
 
 .left{
-  background-color: #FFD8C7;
-  height: 250px;
-  width: 100%;
+  background-color: #ffb0a0;
 }
 
 .content{
-  background-color: #FFD117;
-  height: 250px;
-  width: 100%;
+  background-color: #f5e9de;
 }
 
 .right{
-  background-color: #5CD2D9;
-  height: 250px;
-  width: 100%;
+  background-color: #ff6749;
 }
 
+footer{
+  background-color: #553c60;
+}
 
 @media all and (min-width: 1024px){
 
-  body{
+body{
+width: 100%;
+height: 100%;
+}
+
+header, footer{
+  height: 180px;
   width: 100%;
-  height: 100%;
 }
 
-  header, footer{
-    height: 180px; 
-    width: 100%;
-  }
+main{
+  display: flex; 
+  flex-direction: row;
+}
 
-  main {
-    display: flex;
-    flex-direction: row;
-  }
-
-.left, .content, .right {
+.left, .right{
   height: 700px;
+  width: 15%;
 }
 
-  .left{
-    width: 15%;
-  }
+.content{
+  height: 700px;
+  width: 70%;
+}
 
-  .content{
-    width: 70%;
-  }
-
-  .right{
-    width: 15%;
-  }
 }
