@@ -11,13 +11,11 @@ p{
 
 header, footer{
   height: 100px;
-  width: 100%;
   background-color: #553c60;
 }
 
 .left, .content, .right{
   height: 250px;
-  width: 100%;
 }
 
 .left{
@@ -42,10 +40,9 @@ header, footer{
   main{
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    height: 700px;
   }
 
-  .left, .content, .right{
+  main, .left, .content, .right{
     height: 700px;
   }
 
