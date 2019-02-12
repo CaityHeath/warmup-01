@@ -1,0 +1,49 @@
+body{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+  padding-top: 10px;
+}
+
+header, footer{
+  height: 100px;
+  background-color: #553c60;
+}
+
+.left, .content, .right{
+  height: 250px;
+}
+
+.left{
+  background-color: #ffb0a0;
+}
+
+.content{
+  background-color: #f5e9de;
+}
+
+.right{
+  background-color: #ff6749;
+}
+
+
+@media all and (min-width: 1024px){
+
+  header, footer{
+    height: 150px;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+  }
+
+  main, .left, .content, .right{
+    height: 700px;
+  }
+
+}
